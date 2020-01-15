@@ -6,10 +6,14 @@ install:
 - pip install .
 script:
 - python -u examples/01-constant-rate.py
+before_deploy:
+# convert readme file
+- source .travis/build.sh
 deploy:
   provider: pypi
   user: nima_mahmoudi
   distributions: sdist bdist_wheel
   skip_existing: true
+  skip_cleanup: true
   password:
     secure: bc7S8xGNFUaURNDf0fQVHWIWAsyrwlKWP32uCkC3iv7vFvkWiEQehB23hQiMImAk2AXcj8o9bayJOgKyhLKLROX7L1k6tu/Zp1Zy8Lc8TCXWfhCzvvQy/7yU4JlDNXBONnnSNyBFaUYLQ1e+HUgaFQ7TokDomDgidLYOVHD6i2cCvvjwJsRyDdkvyj1pWpPKfsjqAqZCy1vFqbKozCN0H6fXVYf1tJ4hK6PS2lBKYGhV1TVKe4dbpzwWIV5XcDvRrga/Ydl1hecacREViwGzK2sv6QlNv4S1oFbnoADWhJOrccVoTLRLfkqxiqbLpFJIKJcka22Q9yazHwWTyWUxthvhDZxYFdihUhQL3p0Vn1PGlMnyzRn9FbL/sLQaBxbRiQCUBl1mYFn4qjlimGF9NUcuk+LwcmsBOO23BPnWH+n5sSah0/ZsoMk+axh9caXPrGEv1BoqXIwTFxw1D3T7it8ZSUKcOnq1LfhsvKAsHJCZYoAKH3VMk9bkCcDs5NY4k0HhVltRYJYxijfNuWrqw+3/7B+T4Tw/awcEtC2ejKd8BwhS2s4PsuAaOqqsiyBhhPjpmhwNM9QMIVlqDJSsUEOnhLCldrw7VIUyd9EQQGbqUnHtfT9D5do/Xtm5YJQ/Oh7KIMoEiAELlUMXQYXSu7UlOKPqOzk7kvJtGDylwdk=
