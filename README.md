@@ -13,7 +13,7 @@ Pypi: https://pypi.org/project/pacswg/
 
 Github Repository: https://github.com/nimamahmoudi/pacswg
 
-Documentation: https://pacswg.readthedocs.io/en/latest/
+Documentation: https://nima-dev.com/pacswg
 
 ## Usage
 
