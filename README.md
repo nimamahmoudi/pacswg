@@ -13,6 +13,8 @@ Pypi: https://pypi.org/project/pacswg/
 
 Github Repository: https://github.com/nimamahmoudi/pacswg
 
+Documentation: https://pacswg.readthedocs.io/en/latest/
+
 ## Usage
 
 Check out the [examples directory](./examples/).
