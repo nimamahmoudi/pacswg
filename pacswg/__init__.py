@@ -1,5 +1,5 @@
-from .wg import *
 from .timer import *
+from .wg import *
 
 __version__ = '0.1.11'
 

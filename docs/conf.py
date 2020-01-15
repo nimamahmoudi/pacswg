@@ -55,7 +55,7 @@ html_theme_options = {
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
-    'vcs_pageview_mode': '',
+    # 'vcs_pageview_mode': '',
     # Toc options
     'collapse_navigation': True,
     'sticky_navigation': True,
@@ -72,14 +72,14 @@ autoclass_content = "both"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'] }
+
 # At the bottom of conf.py
-
-
 def setup(app):
     app.add_config_value('recommonmark_config', {
         # 'url_resolver': lambda url: github_doc_root + url,
         'auto_toc_tree_section': 'Contents',
         'enable_eval_rst': True,
-        'enable_auto_doc_ref': True,
+        # 'enable_auto_doc_ref': True,
     }, True)
     app.add_transform(AutoStructify)

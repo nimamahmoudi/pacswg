@@ -1,10 +1,18 @@
 import queue
 import time
 import threading
-from .timer import *
+from timer import *
 
 import numpy as np
+
 def get_random_wait_time(rps):
+    """get_random_wait_time generates random exponential inter-arrival times corresponding to Poisson process.
+    
+    :param rps: rps or requests per second is the target number of requests per second
+    :type rps: float
+    :return: a draw from the resulting exponential distribution for inter-arrival time
+    :rtype: float
+    """    
     scale = 1/rps
     return np.random.exponential(scale)
 
