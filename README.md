@@ -28,3 +28,11 @@ Upgrading:
 ```bash
 pip install pacswg --upgrade
 ```
+
+For installation in development mode:
+
+```
+git clone https://github.com/nimamahmoudi/pacswg
+cd pacswg
+pip install -e .
+```
