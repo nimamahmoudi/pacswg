@@ -1,7 +1,7 @@
 import queue
 import time
 import threading
-from timer import *
+from pacswg.timer import *
 
 import numpy as np
 
