@@ -13,11 +13,11 @@ Pypi: https://pypi.org/project/pacswg/
 
 Github Repository: https://github.com/nimamahmoudi/pacswg
 
-# Usage
+## Usage
 
 Check out the [examples directory](./examples/).
 
-# Installation
+## Installation
 
 Install using pip:
 ```bash
@@ -36,3 +36,7 @@ git clone https://github.com/nimamahmoudi/pacswg
 cd pacswg
 pip install -e .
 ```
+
+## Development
+
+`Note:` README.rst will be overwritten from time to time, using converters that convert markdown to rst format. Don't modify it since the changes might be overwritten.
