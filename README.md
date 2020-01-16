@@ -17,7 +17,7 @@ Documentation: https://pacswg.readthedocs.io/
 
 ## Usage
 
-Check out the [examples directory](./examples/).
+Check out the [usage section in our documentations](https://pacswg.readthedocs.io/en/latest/usage.html).
 
 ## Installation
 
