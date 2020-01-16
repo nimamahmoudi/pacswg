@@ -43,4 +43,4 @@ pip install -e .
 
 ## Development
 
-`Note:` README.rst will be overwritten from time to time, using converters that convert markdown to rst format. Don't modify it since the changes might be overwritten.
+`Note:` README.rst will be overwritten from time to time using converters that convert markdown to rst format. Don't modify it since the changes might be overwritten.
