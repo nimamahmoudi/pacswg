@@ -103,8 +103,8 @@ class WorkloadGenerator:
         :return: success
         :rtype: boolean
         """        
-        if new_rps < 1/60:
-            new_rps = 1/60
+        if new_rps < 1 / 60 / 60:
+            new_rps = 1 / 60 / 60
         self.rps = new_rps
         return True
 
